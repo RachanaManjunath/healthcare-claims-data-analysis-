@@ -1,0 +1,18 @@
+,,,,
+,Sample Claims,,,
+,Column Name,Data Type,Nullable,Definition
+,patient_id,STRING,NO,Internal patient identifier
+,claim_id,INT,NO,Unique claim identifier for a single procedure
+,diagnosis_codes,STRING,YES,List of all ICD-10 diagnosis codes associated with a single procedure.  Multiple diagnoses are separated by a '^'
+,procedure_code,INT,NO,CPT code for procedure
+,date_service,DATE,NO,Date of procedure in YYYY/DD/MM format
+,date_received,DATE,NO,Date claim was received by payor in YYYY/DD/MM format
+,,,,
+,valid_icd_10_codes,,,
+,Column Name,Data Type,Nullable,Definition
+,code,STRING,NO,List of valid ICD-10 codes.  All punctuation removed. 
+,,,,
+,valid_cpt_codes,,,
+,Column Name,Data Type,Nullable,Definition
+,code,INT,NO,CPT code
+,short_description,STRING,NO,Description of procedure
